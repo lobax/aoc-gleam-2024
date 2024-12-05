@@ -53,3 +53,26 @@ pub fn diag_left_test() {
 X....."
   solution.part1(input) |> should.equal(1)
 }
+
+pub fn cross_test() {
+  let input = 
+"M.S
+.A.
+M.S"
+  solution.part2(input) |> should.equal(1)
+}
+
+pub fn part2_test() {
+  let input = 
+"MMMSXXMASM
+MSAMXMSMSA
+AMXSXMAAMM
+MSAMASMSMX
+XMASAMXAMM
+XXAMMXXAMA
+SMSMSASXSS
+SAXAMASAAA
+MAMMMXMMMM
+MXMXAXMASX"
+  solution.part2(input) |> should.equal(9)
+}
